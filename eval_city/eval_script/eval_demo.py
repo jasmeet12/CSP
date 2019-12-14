@@ -1,11 +1,12 @@
 import os
+
 from coco import COCO
 from eval_MR_multisetup import COCOeval
 
 annType = 'bbox' #specify type here
 
 #initialize COCO ground truth api
-annFile = '../val_gt.json'
+annFile = '../val_crowd_gt.json'
 main_path = '../../output/valresults/city/h/off'
 for f in sorted(os.listdir(main_path)):
     print f
